@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="Imagens/remedio.png" alt="remédios" width="30" height="24"> Farmácia Solidária</a>
+                <img src="Imagens/remedio.png" alt="desenho de remédios" width="30" height="24"> Farmácia Solidária</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -36,7 +36,10 @@
                         <a class="nav-link" href="dashboard.php" >DashBoard Estoque</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" >Outros DashBoards</a>
+                        <a class="nav-link" href="api_recall.html" >Consulta Recall Ibuprofeno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="api_tylenol.html" >Consulta Info Tylenol</a>
                     </li>
 
                 </ul>
@@ -81,10 +84,15 @@
 <br>
 
 <h2>Qual o objetivo do nosso projeto?</h2>
-<p>O objetivo do nosso projeto é desenvolver um site que atue como uma plataforma para impulsionar as atividades da farmácia solidária. Através desta plataforma, buscamos apresentar de forma clara e acessível o funcionamento das farmácias solidárias, destacando sua importância e impacto positivo na comunidade. Além disso, nosso site permitirá que pessoas interessadas em contribuir possam informar sobre as doações que desejam fazer, facilitando o processo de coleta e distribuição de medicamentos essenciais para aqueles que mais precisam. Uma das funcionalidades chave do nosso projeto será a gestão do estoque, possibilitando o acompanhamento em tempo real dos medicamentos disponíveis, garantindo assim uma distribuição eficiente e transparente dos recursos. Em resumo, nosso objetivo é criar uma plataforma abrangente e eficaz que apoie e fortaleça as iniciativas das farmácias solidárias, promovendo o acesso equitativo aos cuidados de saúde e contribuindo para o bem-estar das comunidades atendidas.</p>
+<p>O objetivo do nosso projeto foi aprimorar as funcionalidades do site que anteriormente desenvolvemos como estudantes da Univesp. Na primeira fase, buscamos impulsionar as atividades da farmácia solidária, com apresentação de forma clara e acessível o seu funcionamento, além de destacar sua importância e impacto positivo na comunidade.
+    Nosso site permite que pessoas interessadas em contribuir se informem sobre as doações que desejam fazer, o que facilita o processo de coleta e distribuição de medicamentos essenciais para aqueles que mais precisam. Uma das funcionalidades-chave do projeto anterior foi a gestão do estoque, que possibilita o acompanhamento em tempo real dos medicamentos disponíveis, promove uma distribuição eficiente e transparente dos recursos.
+    Neste novo projeto, implementamos melhorias significativas, como novas funcionalidades, como consultas sobre medicamentos como ibuprofeno e Tylenol, além de outras inovações.
+    Em resumo, nosso objetivo foi criar uma plataforma abrangente e eficaz que apoie e fortaleça as iniciativas das farmácias solidárias, com fomento ao acesso equitativo aos cuidados de saúde e contribuição para o bem-estar das comunidades atendidas.
+    </p>
 
 <br>
-<img class="img-fluid rounded mx-auto d-block" src="Imagens/estoque.png" alt="estoque">
+<img class="img-fluid rounded mx-auto d-block" src="Imagens/estoque.png" alt="Desenho de um computador com a tela com referência 
+ao estoque">
 
 </div>
 
@@ -108,7 +116,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+        const botaoImprimir = document.getElementById('botaoImprimir');
+  botaoImprimir.addEventListener('click', () => {
+    window.print();
+  });
+    </script>
 
 </body>
 

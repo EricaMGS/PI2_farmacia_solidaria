@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    
     <!-- Navbar início -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -27,19 +28,19 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="form.php" >Doar Medicamentos</a>
+                        <a class="nav-link" href="form.php" target="_blank">Doar Medicamentos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sistema.php" >Gestão Estoque</a>
+                        <a class="nav-link" href="sistema.php" target="_blank">Gestão Estoque</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="dashboard.php" >DashBoard Estoque</a>
+                        <a class="nav-link" href="dashboard.php" target="_blank">DashBoard Estoque</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="api_recall.html" >Consulta Recall Ibuprofeno</a>
+                        <a class="nav-link" href="api_recall.html" target="_blank">Consulta Recall Ibuprofeno</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="api_tylenol.html" >Consulta Info Tylenol</a>
+                        <a class="nav-link" href="api_tylenol.html" target="_blank" >Consulta Info Tylenol</a>
                     </li>
 
                 </ul>
@@ -52,7 +53,7 @@
         </div>
     </nav>
     <!-- Navbar fim -->
-    
+        
     <style>
         /* Estilos para o container */
         .container {
@@ -78,17 +79,17 @@
     </div>
     <!-- Fim botão JavaScript para imprimir página-->
     <br>
-    <div class="container">
+<div class="container">
 <h2>O que é uma farmácia solidária?</h2>
     <p>Uma farmácia solidária opera de maneira a garantir que medicamentos essenciais estejam disponíveis para aqueles que enfrentam dificuldades financeiras ou sociais. Geralmente mantida por organizações sem fins lucrativos ou voluntários engajados na área da saúde, essas instituições recebem doações de medicamentos, frequentemente dentro do prazo de validade, de empresas farmacêuticas, profissionais da saúde e membros da comunidade. Esses medicamentos são então distribuídos gratuitamente ou a preços simbólicos para indivíduos ou famílias que não têm condições de arcar com os custos em uma farmácia convencional. Além da distribuição de medicamentos, as farmácias solidárias podem oferecer serviços como aconselhamento farmacêutico, orientação sobre o uso adequado dos medicamentos e até mesmo encaminhamento para outras formas de assistência médica. Essas iniciativas desempenham um papel fundamental na promoção da equidade no acesso aos cuidados de saúde e no apoio ao bem-estar das comunidades menos privilegiadas.</p>
 <br>
-
-<h2>Qual o objetivo do nosso projeto?</h2>
+</h2>
+<h2>Qual o objetivo do nosso projeto?
 <p>O objetivo do nosso projeto foi aprimorar as funcionalidades do site que anteriormente desenvolvemos como estudantes da Univesp. Na primeira fase, buscamos impulsionar as atividades da farmácia solidária, com apresentação de forma clara e acessível o seu funcionamento, além de destacar sua importância e impacto positivo na comunidade.
     Nosso site permite que pessoas interessadas em contribuir se informem sobre as doações que desejam fazer, o que facilita o processo de coleta e distribuição de medicamentos essenciais para aqueles que mais precisam. Uma das funcionalidades-chave do projeto anterior foi a gestão do estoque, que possibilita o acompanhamento em tempo real dos medicamentos disponíveis, promove uma distribuição eficiente e transparente dos recursos.
     Neste novo projeto, implementamos melhorias significativas, como novas funcionalidades, como consultas sobre medicamentos como ibuprofeno e Tylenol, além de outras inovações.
     Em resumo, nosso objetivo foi criar uma plataforma abrangente e eficaz que apoie e fortaleça as iniciativas das farmácias solidárias, com fomento ao acesso equitativo aos cuidados de saúde e contribuição para o bem-estar das comunidades atendidas.
-    </p>
+    </p> 
 
 <br>
 <img class="img-fluid rounded mx-auto d-block" src="Imagens/estoque.png" alt="Desenho de um computador com a tela com referência 
@@ -98,6 +99,7 @@ ao estoque">
 
     <br>
     <br>
+    
      <!-- Copyright -->
     <footer class="bg-body-tertiary text-center text-lg-start">
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
@@ -113,16 +115,25 @@ ao estoque">
         <!-- Copyright -->
 
     </footer>
-
+    <div vw class = "enabled">
+        <div vw-access-button class = "active"> </div>
+        <div vw-plugin-wrapper>
+        <div class = "vw-plugin-top-wrapper"> </div>
+        </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous">
-        const botaoImprimir = document.getElementById('botaoImprimir');
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+<script>
+  const botaoImprimir = document.getElementById('botaoImprimir');
   botaoImprimir.addEventListener('click', () => {
     window.print();
   });
-    </script>
-
+</script>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 </body>
-
 </html>
+    
+
